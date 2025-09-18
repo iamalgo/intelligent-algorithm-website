@@ -23,6 +23,7 @@ import AlgoInsuLogo from './assets/Algoinsulogojpg.jpg'
 import VenturesLogo from './assets/Gemini_Generated_Image_pze67ppze67ppze6.png'
 import IAMediaLogo from './assets/IAMediaLogo.png'
 import LimyeLogo from './assets/Limye\'Official.png'
+import HeroLogo from './assets/hero-logo.png'
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -194,8 +195,8 @@ function App() {
         )}
       </nav>
 
-      {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+  {/* Hero Section */}
+  <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-900"></div>
         <div className="absolute inset-0 bg-gradient-radial from-orange-500/10 via-transparent to-transparent"></div>
         
@@ -204,11 +205,29 @@ function App() {
           <div className="w-96 h-96 rounded-full bg-gradient-to-br from-orange-500/20 to-transparent animate-pulse"></div>
         </div>
         
-        <motion.div 
-          style={{ opacity, scale }}
-          className="relative z-10 text-center max-w-4xl mx-auto px-4"
-        >
-          <motion.h1 
+        <div className="relative z-10 max-w-7xl mx-auto px-4 w-full">
+          <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between lg:space-x-16 space-y-8 lg:space-y-0">
+
+            {/* Logo Section */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8, x: -50 }}
+              animate={{ opacity: 1, scale: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="flex-shrink-0"
+            >
+              <img
+                src={HeroLogo}
+                alt="Intelligent Algorithm Management Logo"
+                className="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 xl:w-72 xl:h-72"
+              />
+            </motion.div>
+
+            {/* Text Content */}
+            <motion.div
+              style={{ opacity, scale }}
+              className="flex-1 text-center lg:text-left max-w-3xl"
+            >
+              <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -252,7 +271,9 @@ function App() {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </motion.div>
-        </motion.div>
+            </motion.div>
+          </div>
+        </div>
 
         <motion.div 
           animate={{ y: [0, 10, 0] }}
