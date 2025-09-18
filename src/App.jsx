@@ -82,7 +82,7 @@ function App() {
       logo: IAMLogo,
       name: "Intelligent Algorithm Management",
       description: "Core technology services: web development, hosting, CRM, and e-commerce solutions powered by intelligent algorithms.",
-      url: "#",
+      url: "#services",
       isCenter: true
     },
     {
