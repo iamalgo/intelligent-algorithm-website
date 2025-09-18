@@ -382,7 +382,7 @@ function App() {
           >
             <Card className="bg-white/5 backdrop-blur-sm border-white/10">
               <CardContent className="p-8">
-                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" className="space-y-6">
+                <form action="https://formspree.io/f/mandgkjo" method="POST" className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-medium text-gray-300 mb-2">Name</label>
