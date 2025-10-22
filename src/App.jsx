@@ -496,6 +496,9 @@ function App() {
               </a>
             </div>
           </div>
+          <div className="mt-6 text-center">
+            <a href="/phone-sms-mms-disclosure.html" className="text-gray-400 hover:underline">Phone, SMS & MMS Disclosure</a>
+          </div>
           <div className="mt-8 pt-8 border-t border-white/10 text-center">
             <p className="text-gray-400">
               © 2025 Intelligent Algorithm Management. All rights reserved.
